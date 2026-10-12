@@ -1,15 +1,7 @@
-CXX = g++
-CXXFLAGS = -std=c++17 -O2 -Wall -Wextra
-
-TARGET = code
-SOURCES = main.cpp
-
-all: $(TARGET)
-
-$(TARGET): $(SOURCES)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SOURCES)
+all:
+	g++ -std=c++17 -O2 -o code main.cpp
 
 clean:
-	rm -f $(TARGET)
+	rm -f code
 
 .PHONY: all clean
